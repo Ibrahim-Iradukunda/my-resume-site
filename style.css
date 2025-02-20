@@ -1,0 +1,319 @@
+/* style.css */
+/* scroll behavior make smopth scroll*/
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+#mode-toggle {
+  background-color: #046865;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#mode-toggle:hover {
+  background-color: #03514a;
+}
+
+.grid-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 60px 10%;
+  /* text-align: center; */
+}
+
+.grid-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid-container h1, .grid-container h2, .grid-container h3 {
+  color: #046865;
+}
+
+.card{
+  width: 300px;
+}
+
+.card, .intro, .images, p, ul {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #141212;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #333;
+  /* color: #333; */
+}
+
+.dark-mode header {
+  /* background-color: #111; */
+}
+
+.dark-mode .navbar a {
+  color: #ddd;
+}
+
+.dark-mode .navbar a:hover {
+  color: #ffd700;
+}
+
+.dark-mode #mode-toggle {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode footer {
+  /* background-color: #111; */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+
+
+/* CSS Hover Effects */
+
+.grid-container h1:hover,
+.grid-container h2:hover,
+.grid-container h3:hover {
+  color: #ffd700; /* Original color */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffd700; /* Original color */
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover, .intro:hover, .images:hover, p:hover, ul:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+#mode-toggle:hover {
+  background-color: #03514a;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03514a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 15%;
+  height: 40px;
+  margin: 10px 0;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
+button:hover {
+  background-color: #056860;
+}
+.button-two:hover {
+  background-color: #056860;
+}
+
+
+
+
+/* responsiveness*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .button-two {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  .button-two {
+    width: 30%;
+    margin: 10px auto;
+  }
+}
+
+/*this about form validation css*/
+
+form {
+  display: grid;
+  /* gap: 0px; */
+}
+
+form .card {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #046865;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  background-color: #046865;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #03514a;
+}
+
+/* Optional: Add some error styling */
+input:invalid, textarea:invalid {
+  border-color: #03514a;
+}
+
+input:valid, textarea:valid {
+  border-color: green;
+}
+
+
+/* CSS for Image Slider */
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.intro{
+
+  width: 30%;
+  /* height: 200%; */
+  /* padding: 20px;
+  margin: 20px 0; */
+}
+
+/*css for fun fact*/
+
+.fun-fact{
+  width: 50%;
+  height: auto;
+}
