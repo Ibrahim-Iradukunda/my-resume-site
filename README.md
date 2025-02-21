@@ -27,9 +27,3 @@ Welcome to my personal resume website! This project showcases my skills, experie
 - **Skills**: A list of developed skills
 - **Profile**: A showcase of projects in card format
 - **Contact**: A contact form with validation and privacy policy
-
-## How to Use
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Ibrahim-Iradukunda/resume-website.git
