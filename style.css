@@ -65,6 +65,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .grid-container h1,
@@ -74,7 +76,10 @@ header {
 }
 
 .card {
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 250px;
+  flex: 1 1 300px;
   border-left: 5px solid #046865;
   background: linear-gradient(135deg, #f4f4f4 80%, #e0f7fa 100%);
   transition: box-shadow 0.3s, transform 0.3s;
@@ -311,8 +316,10 @@ textarea:valid {
   position: relative;
   width: 100%;
   max-width: 500px;
+  box-sizing: border-box;
   overflow: hidden;
   margin: 0 auto;
+  /* aspect-ratio removed */
 }
 
 .slides {
@@ -322,9 +329,9 @@ textarea:valid {
 
 .slides img {
   width: 100%;
-  flex: 0 0 100%;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .intro {
@@ -389,4 +396,20 @@ textarea:valid {
 
 .card a[href*="linkedin"]:hover {
   background: #005983;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .fun-fact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    max-width: 100vw;
+  }
 }
