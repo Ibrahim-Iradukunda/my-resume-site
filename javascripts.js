@@ -8,7 +8,7 @@ modeToggle.addEventListener('click', () => {
 
 // JavaScript for Contact Form Validation
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function (event) {
   event.preventDefault();
   if (this.checkValidity()) {
     alert('Form submitted successfully!');
@@ -22,18 +22,26 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 // JavaScript for Image Slider
 
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slides img');
+document.addEventListener('DOMContentLoaded', function () {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slides img');
+  const slidesContainer = document.querySelector('.slides');
+  const slider = document.querySelector('.slider');
 
-function showSlide(index) {
-  if (index >= slides.length) currentSlide = 0;
-  if (index < 0) currentSlide = slides.length - 1;
-  const offset = -currentSlide * 100;
-  document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-}
+  function showSlide(index) {
+    if (index >= slides.length) currentSlide = 0;
+    if (index < 0) currentSlide = slides.length - 1;
+    const slideWidth = slider.offsetWidth;
+    const offset = -currentSlide * slideWidth;
+    slidesContainer.style.transform = `translateX(${offset}px)`;
+  }
 
-setInterval(() => {
-  currentSlide++;
-  showSlide(currentSlide);
-}, 3000);
+  // Make sure the slider resizes correctly on window resize
+  window.addEventListener('resize', () => showSlide(currentSlide));
+
+  setInterval(() => {
+    currentSlide++;
+    showSlide(currentSlide);
+  }, 3000);
+});
 

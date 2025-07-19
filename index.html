@@ -16,6 +16,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#portfolio">Profile</a>
         <a href="#contact">Contact</a>
         <button id="mode-toggle">Dark Mode</button>
@@ -124,6 +125,32 @@
       </div>
     </section>
 
+    <section id="skills" class="grid-container">
+      <h2>Skills</h2>
+      <div class="grid-container-1">
+        <div class="card">
+          <p>
+            Over the years, I have developed a diverse set of skills that I
+            believe are crucial for personal and professional success. These
+            skills have enabled me to excel in various roles and continue to
+            push myself to grow and improve.
+          </p>
+        </div>
+        <div class="card">
+          <ul style="display: grid">
+            <li>Computer Literacy</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Organization</li>
+            <li>Public Speaking</li>
+            <li>Web Development</li>
+            <li>Problem Solving</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="experience" class="grid-container">
       <h2>Work & Leadership Experience</h2>
       <div class="grid-container-1">
@@ -194,28 +221,58 @@
       </div>
     </section>
 
-    <section id="skills" class="grid-container">
-      <h2>Skills</h2>
+    <section id="projects" class="grid-container">
+      <h2>Projects</h2>
+      <p>Explore a curated collection of my work—blending individual creativity, technical execution, and collaborative problem-solving across real-world challenges.</p>
       <div class="grid-container-1">
         <div class="card">
-          <p>
-            Over the years, I have developed a diverse set of skills that I
-            believe are crucial for personal and professional success. These
-            skills have enabled me to excel in various roles and continue to
-            push myself to grow and improve.
-          </p>
+          <h3>CodeTech – Interactive Quiz Platform</h3>
+          <p>A gamified platform designed to strengthen theoretical knowledge in Python, ML, JavaScript, and more through structured quizzes and competitive learning.</p>
+          <ul>
+            <li><strong>Role:</strong> Full Stack Developer</li>
+            <li><strong>Technologies:</strong> Python, JavaScript, HTML, CSS, Flask</li>
+            <li><strong>Impact:</strong> Enhanced user engagement and learning outcomes through interactive, competitive features.</li>
+          </ul>
         </div>
         <div class="card">
-          <ul style="display: grid">
-            <li>Computer Literacy</li>
-            <li>Teamwork</li>
-            <li>Leadership</li>
-            <li>Organization</li>
-            <li>Public Speaking</li>
+          <h3>Personal Developer Portfolio</h3>
+          <p>A responsive, single-page site showcasing my skills, projects, and certifications, with a strong focus on design and technical detail.</p>
+          <ul>
+            <li><strong>Role:</strong> Frontend Developer</li>
+            <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Impact:</strong> Improved professional visibility and received positive feedback from recruiters and peers.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Interactive Travel Planner</h3>
+          <p>A user-friendly web app enabling personalized travel planning with dynamic mapping and itinerary management.</p>
+          <ul>
+            <li><strong>Role:</strong> Web Developer</li>
+            <li><strong>Technologies:</strong> JavaScript, Google Maps API, CSS</li>
+            <li><strong>Impact:</strong> Helped users efficiently organize trips and manage itineraries with ease.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Touring Rwanda and Safaris</h3>
+          <p>A tourism platform promoting Rwanda’s natural beauty and culture through sustainable, tailor-made tours led by expert local guides.</p>
+          <ul>
+            <li><strong>Role:</strong> Backend Developer</li>
+            <li><strong>Technologies:</strong> Python, SQLite, HTML, CSS</li>
+            <li><strong>Impact:</strong> Supported local tourism and increased bookings through a user-friendly, informative platform.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>MoMo Data Analysis Project</h3>
+          <p>A Flask-based dashboard that visualizes mobile money transactions with support for XML uploads, transaction filtering, pagination, and real-time insights.</p>
+          <ul>
+            <li><strong>Role:</strong> Data Analyst & Backend Developer</li>
+            <li><strong>Technologies:</strong> Python, Flask, SQLite, HTML, CSS</li>
+            <li><strong>Impact:</strong> Enabled actionable business insights and improved financial transparency for stakeholders.</li>
           </ul>
         </div>
       </div>
     </section>
+    <!-- END PROJECTS SECTION -->
 
     <section id="portfolio" class="grid-container">
       <h2>Profile</h2>
@@ -276,7 +333,7 @@
 
     <section id="contact" class="grid-container">
       <h2>Contact</h2>
-      <form action="https://formsubmit.co/goldibra5@gmail.com" method="POST">
+      <form id="contactForm" action="https://formsubmit.co/goldibra5@gmail.com" method="POST">
         <div class="card">
           <label for="name">Name:</label>
           <input
