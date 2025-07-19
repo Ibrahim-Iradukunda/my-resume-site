@@ -441,6 +441,15 @@ textarea:valid {
 @media (max-width: 768px) {
   .hamburger {
     display: flex !important;
+    background: #fff;
+    border: 2px solid #046865;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(4, 104, 101, 0.08);
+    z-index: 10002;
+  }
+
+  .hamburger span {
+    background: #046865;
   }
 
   .nav-links {
@@ -479,4 +488,9 @@ textarea:valid {
   #mode-toggle {
     margin-left: 10px;
   }
+}
+
+/* Fallback: always show hamburger on mobile, even if JS fails */
+.hamburger[aria-expanded="false"] {
+  outline: 2px dashed #ff9800;
 }
